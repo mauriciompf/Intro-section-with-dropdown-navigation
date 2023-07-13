@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/output.css" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body class="text-base font-epilogue">
+    <header>
+      <div class="my-4 mx-auto w-[90%] flex justify-between">
+        <div class="flex gap-10">
+          <div>
+            <a href="#">
+              <img src="./images/logo.svg" alt="Snap" />
+            </a>
+          </div>
+          <ul class="hidden gap-8">
+            <li>
+              <a href="#"
+                ><span>Features</span>
+                <img
+                  class="inline-block"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+                <img
+                  class="inline-block"
+                  src="./images/icon-arrow-up.svg"
+                  alt=""
+                />
+              </a>
+              <ul>
+                <li>
+                  <a href="#">
+                    <img
+                      class="inline-block"
+                      src="./images/icon-todo.svg"
+                      alt=""
+                    />
+                    <span>Todo List</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="inline-block"
+                      src="./images/icon-calendar.svg"
+                      alt=""
+                    />
+                    <span>Calendar</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="inline-block"
+                      src="./images/icon-reminders.svg"
+                      alt=""
+                    />
+                    <span>Reminders</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="inline-block"
+                      src="./images/icon-planning.svg"
+                      alt=""
+                    />
+                    <span>Planning</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <span>Company</span>
+                <img
+                  class="cursor-pointer inline-block"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+                <img
+                  class="cursor-pointer inline-block"
+                  src="./images/icon-arrow-up.svg"
+                  alt=""
+                />
+              </a>
+              <ul>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+        <div class="hidden">
+          <button type="button">Login</button>
+          <button type="button">Register</button>
+        </div>
+        <button type="button">
+          <img src="./images/icon-menu.svg" alt="" />
+        </button>
+      </div>
+    </header>
+    <main>
+      <div>
+        <div>
+          <div>
+            <h1>Make remote work</h1>
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button type="button">Learn more</button>
+          </div>
+          <div>
+            <img src="./images/client-databiz.svg" alt="Databiz" />
+            <img src="./images/client-audiophile.svg" alt="Audiophile" />
+            <img src="./images/client-meet.svg" alt="Meet" />
+            <img src="./images/client-maker.svg" alt="make" />
+          </div>
+        </div>
+        <div>
+          <picture>
+            <source
+              srcset="./images/image-hero-desktop.png"
+              media="(min-width: 992px)"
+              type="image/jpeg"
+            />
+            <img src="./images/image-hero-mobile.png" alt="" />
+          </picture>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
