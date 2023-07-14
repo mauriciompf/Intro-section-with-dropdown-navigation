@@ -24,7 +24,7 @@
   </head>
   <body class="text-base font-epilogue">
     <header>
-      <div class="my-4 mx-auto w-[90%] flex justify-between">
+      <div class="my-4 mx-auto w-[95%] flex justify-between">
         <div class="flex gap-10">
           <div>
             <a href="#">
@@ -123,21 +123,42 @@
       </div>
     </header>
     <main>
-      <div>
+      <div class="flex flex-col-reverse">
         <div>
-          <div>
-            <h1>Make remote work</h1>
-            <p>
+          <div class="mx-auto w-[95%] my-6 text-center">
+            <h1 class="font-bold text-3xl">Make remote work</h1>
+            <p class="text-medium-gray my-4 text-sm">
               Get your team in sync, no matter your location. Streamline
               processes, create team rituals, and watch productivity soar.
             </p>
-            <button type="button">Learn more</button>
+            <button
+              class="bg-almost-black text-almost-white font-bold rounded-xl px-5 py-2 text-sm"
+              type="button"
+            >
+              Learn more
+            </button>
           </div>
-          <div>
-            <img src="./images/client-databiz.svg" alt="Databiz" />
-            <img src="./images/client-audiophile.svg" alt="Audiophile" />
-            <img src="./images/client-meet.svg" alt="Meet" />
-            <img src="./images/client-maker.svg" alt="make" />
+          <div class="mx-auto w-[95%] flex gap-7 justify-center mt-10 mb-5">
+            <img
+              class="w-[50px] object-contain"
+              src="./images/client-databiz.svg"
+              alt="Databiz"
+            />
+            <img
+              class="w-[50px] object-contain"
+              src="./images/client-audiophile.svg"
+              alt="Audiophile"
+            />
+            <img
+              class="w-[50px] object-contain"
+              src="./images/client-meet.svg"
+              alt="Meet"
+            />
+            <img
+              class="w-[50px] object-contain"
+              src="./images/client-maker.svg"
+              alt="make"
+            />
           </div>
         </div>
         <div>
@@ -152,14 +173,19 @@
         </div>
       </div>
     </main>
-    <footer></footer>
-
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+    <footer
+      class="text-center bg-blue-200 text-almost-black relative bottom-0 h-[10vh]"
+    >
+      <span class="text-xs mx-auto w-[90%]">
+        Challenge by
+        <a
+          class="text-red-400"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a class="text-red-400" href="#">Maurício P. Farias</a>.
+      </span>
+    </footer>
     <script src="./js/app.js"></script>
   </body>
 </html>
