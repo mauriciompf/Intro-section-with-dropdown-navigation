@@ -913,4 +913,8 @@ video {
   .md\:leading-7 {
     line-height: 1.75rem;
   }
+
+  .md\:leading-\[1\.7rem\] {
+    line-height: 1.7rem;
+  }
 }
