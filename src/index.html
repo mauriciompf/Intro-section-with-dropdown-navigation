@@ -22,16 +22,16 @@
 
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
-  <body class="text-base font-epilogue">
+  <body class="md:overflow-hidden text-base font-epilogue h-[100vh]">
     <header>
-      <div class="my-4 mx-auto w-[95%] flex justify-between">
+      <div class="py-4 mx-auto w-[95%] flex justify-between">
         <div class="flex gap-10">
           <div>
             <a href="#">
               <img src="./images/logo.svg" alt="Snap" />
             </a>
           </div>
-          <ul class="hidden gap-8">
+          <ul class="flex gap-8">
             <li>
               <a href="#"
                 ><span>Features</span>
@@ -46,7 +46,7 @@
                   alt=""
                 />
               </a>
-              <ul>
+              <ul class="hidden">
                 <li>
                   <a href="#">
                     <img
@@ -103,7 +103,7 @@
                   alt=""
                 />
               </a>
-              <ul>
+              <ul class="hidden">
                 <li><a href="#">History</a></li>
                 <li><a href="#">Our Team</a></li>
                 <li><a href="#">Blog</a></li>
@@ -113,21 +113,29 @@
             <li><a href="#">About</a></li>
           </ul>
         </div>
-        <div class="hidden">
+        <div class="">
           <button type="button">Login</button>
           <button type="button">Register</button>
         </div>
-        <button type="button">
+        <button class="hidden" type="button">
           <img src="./images/icon-menu.svg" alt="" />
         </button>
       </div>
     </header>
     <main>
-      <div class="flex flex-col-reverse">
+      <div
+        class="md:mx-auto md:w-[80%] md:items-center md:justify-between flex flex-col-reverse md:flex-row md:gap-20"
+      >
         <div>
-          <div class="mx-auto w-[95%] my-6 text-center">
-            <h1 class="font-bold text-3xl">Make remote work</h1>
-            <p class="text-medium-gray my-4 text-sm">
+          <div class="w-[600px] my-6 text-center md:text-left">
+            <h1
+              class="md:mr-[11rem] md:text-[4rem] md:leading-[4rem] font-bold text-3xl"
+            >
+              Make remote work
+            </h1>
+            <p
+              class="md:mr-[11rem] md:text-base md:leading-[1.7rem] md:my-10 text-medium-gray my-4 text-sm"
+            >
               Get your team in sync, no matter your location. Streamline
               processes, create team rituals, and watch productivity soar.
             </p>
@@ -161,20 +169,20 @@
             />
           </div>
         </div>
-        <div>
+        <div class="w-[600px]">
           <picture>
             <source
               srcset="./images/image-hero-desktop.png"
               media="(min-width: 992px)"
               type="image/jpeg"
             />
-            <img src="./images/image-hero-mobile.png" alt="" />
+            <img class="" src="./images/image-hero-mobile.png" alt="" />
           </picture>
         </div>
       </div>
     </main>
     <footer
-      class="text-center bg-blue-200 text-almost-black relative bottom-0 h-[10vh]"
+      class="text-center bg-blue-200 text-almost-black fixed bottom-0 w-full"
     >
       <span class="text-xs mx-auto w-[90%]">
         Challenge by
