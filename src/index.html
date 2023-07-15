@@ -24,29 +24,30 @@
   </head>
   <body class="md:overflow-hidden text-base font-epilogue h-[100vh]">
     <header>
-      <div class="py-4 mx-auto w-[95%] flex justify-between">
+      <div
+        class="text-almost-black py-4 mx-auto w-[95%] flex justify-between items-center"
+      >
         <div class="flex gap-10">
           <div>
             <a href="#">
               <img src="./images/logo.svg" alt="Snap" />
             </a>
           </div>
-          <ul class="flex gap-8">
-            <li>
-              <a href="#"
+          <ul class="flex gap-8 text-medium-gray">
+            <li id="dropdown-features">
+              <a
+                id="features-btn"
+                class="hover:text-almost-black focus:text-almost-black"
+                href="#"
                 ><span>Features</span>
                 <img
                   class="inline-block"
                   src="./images/icon-arrow-down.svg"
                   alt=""
                 />
-                <img
-                  class="inline-block"
-                  src="./images/icon-arrow-up.svg"
-                  alt=""
-                />
+                <img class="hidden" src="./images/icon-arrow-up.svg" alt="" />
               </a>
-              <ul class="hidden">
+              <ul id="dropdown-features-content" class="hidden">
                 <li>
                   <a href="#">
                     <img
@@ -90,18 +91,17 @@
               </ul>
             </li>
             <li>
-              <a href="#">
+              <a
+                class="hover:text-almost-black focus:text-almost-black"
+                href="#"
+              >
                 <span>Company</span>
                 <img
-                  class="cursor-pointer inline-block"
+                  class="inline-block"
                   src="./images/icon-arrow-down.svg"
                   alt=""
                 />
-                <img
-                  class="cursor-pointer inline-block"
-                  src="./images/icon-arrow-up.svg"
-                  alt=""
-                />
+                <img class="hidden" src="./images/icon-arrow-up.svg" alt="" />
               </a>
               <ul class="hidden">
                 <li><a href="#">History</a></li>
@@ -109,15 +109,37 @@
                 <li><a href="#">Blog</a></li>
               </ul>
             </li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">About</a></li>
+            <li>
+              <a
+                class="hover:text-almost-black focus:text-almost-black"
+                href="#"
+                >Careers</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-almost-black focus:text-almost-black"
+                href="#"
+                >About</a
+              >
+            </li>
           </ul>
         </div>
-        <div class="">
-          <button type="button">Login</button>
-          <button type="button">Register</button>
+        <div class="hidden md:flex md:gap-8">
+          <button
+            class="hover:text-almost-black focus:text-almost-black"
+            type="button"
+          >
+            Login
+          </button>
+          <button
+            class="border border-medium-gray py-2 px-4 rounded-2xl hover:border-almost-black hover:text-almost-black focus:border-almost-black focus:text-almost-black"
+            type="button"
+          >
+            Register
+          </button>
         </div>
-        <button class="hidden" type="button">
+        <button class="md:hidden" type="button">
           <img src="./images/icon-menu.svg" alt="" />
         </button>
       </div>
@@ -140,36 +162,38 @@
               processes, create team rituals, and watch productivity soar.
             </p>
             <button
-              class="bg-almost-black text-almost-white font-bold rounded-xl px-5 py-2 text-sm"
+              class="bg-almost-black text-almost-white font-bold rounded-xl px-5 py-3 text-sm hover:bg-transparent hover:outline hover:outline-1 hover:outline-almost-black hover:text-almost-black focus:bg-transparent focus:outline focus:outline-1 focus:outline-almost-black focus:text-almost-black"
               type="button"
             >
               Learn more
             </button>
           </div>
-          <div class="mx-auto w-[95%] flex gap-7 justify-center mt-10 mb-5">
+          <div
+            class="md:justify-between mx-auto w-[95%] flex gap-7 justify-center mt-10 mb-5"
+          >
             <img
-              class="w-[50px] object-contain"
+              class="w-[50px] md:w-[100px] object-contain"
               src="./images/client-databiz.svg"
               alt="Databiz"
             />
             <img
-              class="w-[50px] object-contain"
+              class="w-[50px] md:w-[100px] object-contain"
               src="./images/client-audiophile.svg"
               alt="Audiophile"
             />
             <img
-              class="w-[50px] object-contain"
+              class="w-[50px] md:w-[100px] object-contain"
               src="./images/client-meet.svg"
               alt="Meet"
             />
             <img
-              class="w-[50px] object-contain"
+              class="w-[50px] md:w-[100px] object-contain"
               src="./images/client-maker.svg"
               alt="make"
             />
           </div>
         </div>
-        <div class="w-[600px]">
+        <div class="md:w-[600px]">
           <picture>
             <source
               srcset="./images/image-hero-desktop.png"
@@ -187,11 +211,16 @@
       <span class="text-xs mx-auto w-[90%]">
         Challenge by
         <a
-          class="text-red-400"
+          class="text-red-400 hover:text-blue-400 focus:text-blue-400"
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a class="text-red-400" href="#">Maurício P. Farias</a>.
+        >. Coded by
+        <a
+          class="text-red-400 hover:text-blue-400 focus:text-blue-400"
+          href="https://github.com/mauriciompf"
+          >Maurício P. Farias</a
+        >.
       </span>
     </footer>
     <script src="./js/app.js"></script>
