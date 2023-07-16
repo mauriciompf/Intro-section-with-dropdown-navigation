@@ -22,7 +22,9 @@
 
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
-  <body class="md:overflow-hidden text-base font-epilogue h-[100vh]">
+  <body
+    class="md:overflow-hidden text-base font-epilogue h-[100vh] bg-almost-white"
+  >
     <header>
       <div
         class="text-almost-black py-4 mx-auto w-[95%] flex justify-between items-center"
@@ -34,79 +36,98 @@
             </a>
           </div>
           <ul class="flex gap-8 text-medium-gray">
-            <li id="dropdown-features">
+            <li id="dropdown-features" class="relative">
               <a
                 id="features-btn"
                 class="hover:text-almost-black focus:text-almost-black"
                 href="#"
                 ><span>Features</span>
                 <img
-                  class="inline-block"
+                  id="features-arrow-close"
+                  class="mr-2 inline-block"
                   src="./images/icon-arrow-down.svg"
                   alt=""
                 />
-                <img class="hidden" src="./images/icon-arrow-up.svg" alt="" />
+                <img
+                  id="features-arrow-open"
+                  class="hidden mr-2 inline-block"
+                  src="./images/icon-arrow-up.svg"
+                  alt=""
+                />
               </a>
-              <ul id="dropdown-features-content" class="hidden">
-                <li>
+              <ul
+                id="dropdown-features-content"
+                class="hidden absolute bg-white p-4 right-1 w-max rounded-md"
+              >
+                <li class="mb-2">
                   <a href="#">
                     <img
-                      class="inline-block"
+                      class="mr-2 inline-block"
                       src="./images/icon-todo.svg"
                       alt=""
                     />
-                    <span>Todo List</span>
+                    <span class="text-sm">Todo List</span>
                   </a>
                 </li>
-                <li>
+                <li class="mb-2">
                   <a href="#">
                     <img
-                      class="inline-block"
+                      class="mr-2 inline-block"
                       src="./images/icon-calendar.svg"
                       alt=""
                     />
-                    <span>Calendar</span>
+                    <span class="text-sm">Calendar</span>
                   </a>
                 </li>
-                <li>
+                <li class="mb-2">
                   <a href="#">
                     <img
-                      class="inline-block"
+                      class="mr-2 inline-block"
                       src="./images/icon-reminders.svg"
                       alt=""
                     />
-                    <span>Reminders</span>
+                    <span class="text-sm">Reminders</span>
                   </a>
                 </li>
-                <li>
+                <li class="">
                   <a href="#">
                     <img
-                      class="inline-block"
+                      class="mr-2 inline-block"
                       src="./images/icon-planning.svg"
                       alt=""
                     />
-                    <span>Planning</span>
+                    <span class="text-sm">Planning</span>
                   </a>
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="relative">
               <a
+                id="company-btn"
                 class="hover:text-almost-black focus:text-almost-black"
                 href="#"
               >
                 <span>Company</span>
                 <img
-                  class="inline-block"
+                  id="company-arrow-close"
+                  class="mr-2 inline-block"
                   src="./images/icon-arrow-down.svg"
                   alt=""
                 />
-                <img class="hidden" src="./images/icon-arrow-up.svg" alt="" />
+                <img
+                  id="company-arrow-open"
+                  class="hidden mr-2 inline-block"
+                  src="./images/icon-arrow-up.svg"
+                  alt=""
+                />
               </a>
-              <ul class="hidden">
-                <li><a href="#">History</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Blog</a></li>
+              <ul
+                id="company-content"
+                class="hidden absolute bg-white p-4 right-1 w-max rounded-md"
+              >
+                <li><a class="mb-2 text-sm" href="#">History</a></li>
+                <li><a class="mb-2 text-sm" href="#">Our Team</a></li>
+                <li><a class="text-sm" href="#">Blog</a></li>
               </ul>
             </li>
             <li>
@@ -125,7 +146,7 @@
             </li>
           </ul>
         </div>
-        <div class="hidden md:flex md:gap-8">
+        <div class="text-medium-gray hidden md:flex md:gap-8">
           <button
             class="hover:text-almost-black focus:text-almost-black"
             type="button"
@@ -146,7 +167,7 @@
     </header>
     <main>
       <div
-        class="md:mx-auto md:w-[80%] md:items-center md:justify-between flex flex-col-reverse md:flex-row md:gap-20"
+        class="md:mx-auto md:w-[80%] md:items-end md:justify-between flex flex-col-reverse md:flex-row md:gap-20"
       >
         <div>
           <div class="w-[600px] my-6 text-center md:text-left">
