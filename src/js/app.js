@@ -21,9 +21,17 @@ companyButton.addEventListener("click", () => {
 });
 
 window.addEventListener("click", (e) => {
-  if (e.target === featuresButton.parentElement) {
-    // if (e.target !== featuresContent) {
-    console.log("22");
-    // }
+  const elementClicked = e.target;
+  if (featuresButton.contains(elementClicked)) {
+  } else if (!featuresContent.classList.contains("hidden")) {
+    if (featuresContent !== elementClicked) {
+      featuresButton.click();
+    }
+  }
+  if (companyButton.contains(elementClicked)) {
+  } else if (!companyContent.classList.contains("hidden")) {
+    if (companyContent !== elementClicked) {
+      companyButton.click();
+    }
   }
 });
