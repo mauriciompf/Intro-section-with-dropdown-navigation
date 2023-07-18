@@ -25,37 +25,35 @@
   <body
     class="md:overflow-hidden text-base font-epilogue h-[100vh] bg-almost-white"
   >
-    <aside class="hidden">
-      <div
-        class="text-almost-black py-4 mx-auto w-[95%] flex justify-between items-center"
-      >
-        <button class="" type="button">
+    <aside id="menu" class="hidden fixed w-full h-full overflow-auto right-0">
+      <div class="bg-white text-almost-black w-[60%] h-full fixed right-0 px-6">
+        <button id="close-menu" class="absolute right-4 top-5" type="button">
           <img src="./images/icon-close-menu.svg" alt="" />
         </button>
-        <nav class="flex gap-10">
-          <ul class="md:flex gap-8 text-medium-gray">
-            <li id="dropdown-features" class="relative">
+        <nav class="mt-16">
+          <ul class="text-medium-gray">
+            <li id="dropdown-features-aside" class="mb-4">
               <a
-                id="features-btn"
+                id="features-btn-aside"
                 class="hover:text-almost-black focus:text-almost-black"
                 href="#"
                 ><span>Features</span>
                 <img
-                  id="features-arrow-close"
+                  id="features-arrow-close-aside"
                   class="mr-2 inline-block"
                   src="./images/icon-arrow-down.svg"
                   alt=""
                 />
                 <img
-                  id="features-arrow-open"
+                  id="features-arrow-open-aside"
                   class="hidden mr-2 inline-block"
                   src="./images/icon-arrow-up.svg"
                   alt=""
                 />
               </a>
               <ul
-                id="dropdown-features-content"
-                class="hidden absolute bg-white p-4 right-1 w-max rounded-md"
+                id="dropdown-features-content-aside"
+                class="hidden bg-white p-4 right-1 w-max rounded-md"
               >
                 <li class="mb-2">
                   <a href="#">
@@ -99,43 +97,43 @@
                 </li>
               </ul>
             </li>
-            <li class="relative">
+            <li class="relative mb-4">
               <a
-                id="company-btn"
+                id="company-btn-aside"
                 class="hover:text-almost-black focus:text-almost-black"
                 href="#"
               >
                 <span>Company</span>
                 <img
-                  id="company-arrow-close"
+                  id="company-arrow-close-aside"
                   class="mr-2 inline-block"
                   src="./images/icon-arrow-down.svg"
                   alt=""
                 />
                 <img
-                  id="company-arrow-open"
+                  id="company-arrow-open-aside"
                   class="hidden mr-2 inline-block"
                   src="./images/icon-arrow-up.svg"
                   alt=""
                 />
               </a>
               <ul
-                id="company-content"
-                class="hidden absolute bg-white p-4 right-1 w-max rounded-md"
+                id="company-content-aside"
+                class="hidden bg-white p-4 right-1 w-max rounded-md"
               >
                 <li><a class="mb-2 text-sm" href="#">History</a></li>
                 <li><a class="mb-2 text-sm" href="#">Our Team</a></li>
                 <li><a class="text-sm" href="#">Blog</a></li>
               </ul>
             </li>
-            <li>
+            <li class="mb-4">
               <a
                 class="hover:text-almost-black focus:text-almost-black"
                 href="#"
                 >Careers</a
               >
             </li>
-            <li>
+            <li class="mb-4">
               <a
                 class="hover:text-almost-black focus:text-almost-black"
                 href="#"
@@ -144,15 +142,15 @@
             </li>
           </ul>
         </nav>
-        <div class="text-medium-gray md:flex md:gap-8">
+        <div class="text-medium-gray">
           <button
-            class="hover:text-almost-black focus:text-almost-black"
+            class="block hover:text-almost-black focus:text-almost-black mb-4 w-full"
             type="button"
           >
             Login
           </button>
           <button
-            class="border border-medium-gray py-2 px-4 rounded-2xl hover:border-almost-black hover:text-almost-black focus:border-almost-black focus:text-almost-black"
+            class="border w-full border-medium-gray py-2 px-4 rounded-2xl hover:border-almost-black hover:text-almost-black focus:border-almost-black focus:text-almost-black"
             type="button"
           >
             Register
@@ -160,225 +158,227 @@
         </div>
       </div>
     </aside>
-    <header>
-      <div
-        class="text-almost-black py-4 mx-auto w-[95%] flex justify-between items-center"
-      >
-        <nav class="flex gap-10">
-          <div>
-            <a href="#">
-              <img src="./images/logo.svg" alt="Snap" />
-            </a>
-          </div>
-          <ul class="hidden md:flex gap-8 text-medium-gray">
-            <li id="dropdown-features" class="relative">
-              <a
-                id="features-btn"
-                class="hover:text-almost-black focus:text-almost-black"
-                href="#"
-                ><span>Features</span>
-                <img
-                  id="features-arrow-close"
-                  class="mr-2 inline-block"
-                  src="./images/icon-arrow-down.svg"
-                  alt=""
-                />
-                <img
-                  id="features-arrow-open"
-                  class="hidden mr-2 inline-block"
-                  src="./images/icon-arrow-up.svg"
-                  alt=""
-                />
+    <div>
+      <header>
+        <div
+          class="text-almost-black py-4 mx-auto w-[95%] flex justify-between items-center"
+        >
+          <nav class="flex gap-10">
+            <div>
+              <a href="#">
+                <img src="./images/logo.svg" alt="Snap" />
               </a>
-              <ul
-                id="dropdown-features-content"
-                class="hidden absolute bg-white p-4 right-1 w-max rounded-md"
-              >
-                <li class="mb-2">
-                  <a href="#">
-                    <img
-                      class="mr-2 inline-block"
-                      src="./images/icon-todo.svg"
-                      alt=""
-                    />
-                    <span class="text-sm">Todo List</span>
-                  </a>
-                </li>
-                <li class="mb-2">
-                  <a href="#">
-                    <img
-                      class="mr-2 inline-block"
-                      src="./images/icon-calendar.svg"
-                      alt=""
-                    />
-                    <span class="text-sm">Calendar</span>
-                  </a>
-                </li>
-                <li class="mb-2">
-                  <a href="#">
-                    <img
-                      class="mr-2 inline-block"
-                      src="./images/icon-reminders.svg"
-                      alt=""
-                    />
-                    <span class="text-sm">Reminders</span>
-                  </a>
-                </li>
-                <li class="">
-                  <a href="#">
-                    <img
-                      class="mr-2 inline-block"
-                      src="./images/icon-planning.svg"
-                      alt=""
-                    />
-                    <span class="text-sm">Planning</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="relative">
-              <a
-                id="company-btn"
-                class="hover:text-almost-black focus:text-almost-black"
-                href="#"
-              >
-                <span>Company</span>
-                <img
-                  id="company-arrow-close"
-                  class="mr-2 inline-block"
-                  src="./images/icon-arrow-down.svg"
-                  alt=""
-                />
-                <img
-                  id="company-arrow-open"
-                  class="hidden mr-2 inline-block"
-                  src="./images/icon-arrow-up.svg"
-                  alt=""
-                />
-              </a>
-              <ul
-                id="company-content"
-                class="hidden absolute bg-white p-4 right-1 w-max rounded-md"
-              >
-                <li><a class="mb-2 text-sm" href="#">History</a></li>
-                <li><a class="mb-2 text-sm" href="#">Our Team</a></li>
-                <li><a class="text-sm" href="#">Blog</a></li>
-              </ul>
-            </li>
-            <li>
-              <a
-                class="hover:text-almost-black focus:text-almost-black"
-                href="#"
-                >Careers</a
-              >
-            </li>
-            <li>
-              <a
-                class="hover:text-almost-black focus:text-almost-black"
-                href="#"
-                >About</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <div class="text-medium-gray hidden md:flex md:gap-8">
-          <button
-            class="hover:text-almost-black focus:text-almost-black"
-            type="button"
-          >
-            Login
-          </button>
-          <button
-            class="border border-medium-gray py-2 px-4 rounded-2xl hover:border-almost-black hover:text-almost-black focus:border-almost-black focus:text-almost-black"
-            type="button"
-          >
-            Register
-          </button>
-        </div>
-        <button id="menu-btn" class="md:hidden" type="button">
-          <img src="./images/icon-menu.svg" alt="" />
-        </button>
-      </div>
-    </header>
-    <main>
-      <div
-        class="md:mx-auto md:w-[80%] md:items-end md:justify-between flex flex-col-reverse md:flex-row md:gap-20"
-      >
-        <div>
-          <div class="md:w-[600px] my-6 text-center md:text-left">
-            <h1
-              class="md:mr-[11rem] md:text-[4rem] md:leading-[4rem] font-bold text-3xl"
-            >
-              Make remote work
-            </h1>
-            <p
-              class="md:mr-[11rem] md:text-base md:leading-[1.7rem] md:my-10 text-medium-gray my-4 text-sm"
-            >
-              Get your team in sync, no matter your location. Streamline
-              processes, create team rituals, and watch productivity soar.
-            </p>
+            </div>
+            <ul class="hidden md:flex gap-8 text-medium-gray">
+              <li id="dropdown-features" class="relative">
+                <a
+                  id="features-btn"
+                  class="hover:text-almost-black focus:text-almost-black"
+                  href="#"
+                  ><span>Features</span>
+                  <img
+                    id="features-arrow-close"
+                    class="mr-2 inline-block"
+                    src="./images/icon-arrow-down.svg"
+                    alt=""
+                  />
+                  <img
+                    id="features-arrow-open"
+                    class="hidden mr-2 inline-block"
+                    src="./images/icon-arrow-up.svg"
+                    alt=""
+                  />
+                </a>
+                <ul
+                  id="dropdown-features-content"
+                  class="hidden absolute bg-white p-4 right-1 w-max rounded-md"
+                >
+                  <li class="mb-2">
+                    <a href="#">
+                      <img
+                        class="mr-2 inline-block"
+                        src="./images/icon-todo.svg"
+                        alt=""
+                      />
+                      <span class="text-sm">Todo List</span>
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#">
+                      <img
+                        class="mr-2 inline-block"
+                        src="./images/icon-calendar.svg"
+                        alt=""
+                      />
+                      <span class="text-sm">Calendar</span>
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#">
+                      <img
+                        class="mr-2 inline-block"
+                        src="./images/icon-reminders.svg"
+                        alt=""
+                      />
+                      <span class="text-sm">Reminders</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="#">
+                      <img
+                        class="mr-2 inline-block"
+                        src="./images/icon-planning.svg"
+                        alt=""
+                      />
+                      <span class="text-sm">Planning</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="relative">
+                <a
+                  id="company-btn"
+                  class="hover:text-almost-black focus:text-almost-black"
+                  href="#"
+                >
+                  <span>Company</span>
+                  <img
+                    id="company-arrow-close"
+                    class="mr-2 inline-block"
+                    src="./images/icon-arrow-down.svg"
+                    alt=""
+                  />
+                  <img
+                    id="company-arrow-open"
+                    class="hidden mr-2 inline-block"
+                    src="./images/icon-arrow-up.svg"
+                    alt=""
+                  />
+                </a>
+                <ul
+                  id="company-content"
+                  class="hidden absolute bg-white p-4 right-1 w-max rounded-md"
+                >
+                  <li><a class="mb-2 text-sm" href="#">History</a></li>
+                  <li><a class="mb-2 text-sm" href="#">Our Team</a></li>
+                  <li><a class="text-sm" href="#">Blog</a></li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  class="hover:text-almost-black focus:text-almost-black"
+                  href="#"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-almost-black focus:text-almost-black"
+                  href="#"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="text-medium-gray hidden md:flex md:gap-8">
             <button
-              class="bg-almost-black text-almost-white font-bold rounded-xl px-5 py-3 text-sm hover:bg-transparent hover:outline hover:outline-1 hover:outline-almost-black hover:text-almost-black focus:bg-transparent focus:outline focus:outline-1 focus:outline-almost-black focus:text-almost-black"
+              class="hover:text-almost-black focus:text-almost-black"
               type="button"
             >
-              Learn more
+              Login
+            </button>
+            <button
+              class="border border-medium-gray py-2 px-4 rounded-2xl hover:border-almost-black hover:text-almost-black focus:border-almost-black focus:text-almost-black"
+              type="button"
+            >
+              Register
             </button>
           </div>
-          <div
-            class="md:justify-between mx-auto w-[95%] flex gap-7 justify-center mt-10 mb-5"
-          >
-            <img
-              class="w-[50px] md:w-[100px] object-contain"
-              src="./images/client-databiz.svg"
-              alt="Databiz"
-            />
-            <img
-              class="w-[50px] md:w-[100px] object-contain"
-              src="./images/client-audiophile.svg"
-              alt="Audiophile"
-            />
-            <img
-              class="w-[50px] md:w-[100px] object-contain"
-              src="./images/client-meet.svg"
-              alt="Meet"
-            />
-            <img
-              class="w-[50px] md:w-[100px] object-contain"
-              src="./images/client-maker.svg"
-              alt="make"
-            />
+          <button id="open-menu" class="md:hidden" type="button">
+            <img src="./images/icon-menu.svg" alt="" />
+          </button>
+        </div>
+      </header>
+      <main>
+        <div
+          class="md:mx-auto md:w-[80%] md:items-end md:justify-between flex flex-col-reverse md:flex-row md:gap-20"
+        >
+          <div>
+            <div class="md:w-[600px] my-6 text-center md:text-left">
+              <h1
+                class="md:mr-[11rem] md:text-[4rem] md:leading-[4rem] font-bold text-3xl"
+              >
+                Make remote work
+              </h1>
+              <p
+                class="md:mr-[11rem] md:text-base md:leading-[1.7rem] md:my-10 text-medium-gray my-4 text-sm"
+              >
+                Get your team in sync, no matter your location. Streamline
+                processes, create team rituals, and watch productivity soar.
+              </p>
+              <button
+                class="bg-almost-black text-almost-white font-bold rounded-xl px-5 py-3 text-sm hover:bg-transparent hover:outline hover:outline-1 hover:outline-almost-black hover:text-almost-black focus:bg-transparent focus:outline focus:outline-1 focus:outline-almost-black focus:text-almost-black"
+                type="button"
+              >
+                Learn more
+              </button>
+            </div>
+            <div
+              class="md:justify-between mx-auto w-[95%] flex gap-7 justify-center mt-10 mb-5"
+            >
+              <img
+                class="w-[50px] md:w-[100px] object-contain"
+                src="./images/client-databiz.svg"
+                alt="Databiz"
+              />
+              <img
+                class="w-[50px] md:w-[100px] object-contain"
+                src="./images/client-audiophile.svg"
+                alt="Audiophile"
+              />
+              <img
+                class="w-[50px] md:w-[100px] object-contain"
+                src="./images/client-meet.svg"
+                alt="Meet"
+              />
+              <img
+                class="w-[50px] md:w-[100px] object-contain"
+                src="./images/client-maker.svg"
+                alt="make"
+              />
+            </div>
+          </div>
+          <div class="md:w-[600px]">
+            <picture>
+              <source
+                srcset="./images/image-hero-desktop.png"
+                media="(min-width: 992px)"
+                type="image/jpeg"
+              />
+              <img class="" src="./images/image-hero-mobile.png" alt="" />
+            </picture>
           </div>
         </div>
-        <div class="md:w-[600px]">
-          <picture>
-            <source
-              srcset="./images/image-hero-desktop.png"
-              media="(min-width: 992px)"
-              type="image/jpeg"
-            />
-            <img class="" src="./images/image-hero-mobile.png" alt="" />
-          </picture>
-        </div>
-      </div>
-    </main>
-    <footer
-      class="text-center bg-blue-200 text-almost-black fixed bottom-0 w-full"
-    >
-      <span class="text-xs mx-auto w-[90%]">
-        Challenge by
-        <a
-          class="text-red-400 hover:text-blue-400 focus:text-blue-400"
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          >Frontend Mentor</a
-        >. Coded by
-        <a
-          class="text-red-400 hover:text-blue-400 focus:text-blue-400"
-          href="https://github.com/mauriciompf"
-          >Maurício P. Farias</a
-        >.
-      </span>
-    </footer>
+      </main>
+      <footer
+        class="text-center bg-blue-200 text-almost-black fixed bottom-0 w-full"
+      >
+        <span class="text-xs mx-auto w-[90%]">
+          Challenge by
+          <a
+            class="text-red-400 hover:text-blue-400 focus:text-blue-400"
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a
+            class="text-red-400 hover:text-blue-400 focus:text-blue-400"
+            href="https://github.com/mauriciompf"
+            >Maurício P. Farias</a
+          >.
+        </span>
+      </footer>
+    </div>
     <script src="./js/app.js"></script>
   </body>
 </html>
