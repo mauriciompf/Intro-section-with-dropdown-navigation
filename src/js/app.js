@@ -30,26 +30,6 @@ closeMenu.addEventListener("click", () => {
   menu.classList.add("hidden");
 });
 
-window.addEventListener("click", (e) => {
-  const elementClicked = e.target;
-  if (
-    featuresButton.contains(elementClicked) ||
-    companyButton.contains(elementClicked)
-  ) {
-  } else if (
-    !featuresContent.classList.contains("hidden") ||
-    !companyContent.classList.contains("hidden")
-  ) {
-    if (
-      featuresContent === elementClicked ||
-      companyContent !== elementClicked
-    ) {
-      featuresButton.click();
-      companyButton.click();
-    }
-  }
-});
-
 const featuresButtonMenu = document.getElementById("features-btn-aside");
 const featuresContentMenu = document.getElementById(
   "dropdown-features-content-aside"
